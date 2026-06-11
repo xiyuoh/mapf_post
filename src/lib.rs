@@ -79,7 +79,7 @@ impl WaypointFollower {
                 closest_dist_sq = dist_sq;
 
                 // If the robot is at or past the end of the segment, it has passed this segment's start waypoint.
-                if t >= 1.0 {
+                if t >= 0.7 {
                     best_segment_start_idx = i + 1;
                 } else {
                     best_segment_start_idx = i;
